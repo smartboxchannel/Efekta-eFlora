@@ -1,4 +1,4 @@
-# e-Flower (Plant-Watering-Sensor-Zigbee with e-ink 1.02)
+# e-Flower (Plant-Watering-Sensor-Zigbee with e-ink 1.02 display)
 
 e-Paper display 1.02. Powered by SoC CC2530, the sensor is based on a capacitive measurement method. The sensor is powered by a CR2477 battery.
 
