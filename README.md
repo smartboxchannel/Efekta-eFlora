@@ -21,9 +21,9 @@ More info at http://efektalab.com/epws
 
 ![e-Flower](https://github.com/smartboxchannel/e-Flower/blob/main/IMAGES/02.png) 
 
-![Plant-Watering-Sensor-Zigbee2](https://github.com/smartboxchannel/Plant-Watering-Sensor-Zigbee/blob/main/IMAGES/003.jpg) 
+![e-Flower](https://github.com/smartboxchannel/e-Flower/blob/main/IMAGES/03.jpg) 
 
-![Plant-Watering-Sensor-Zigbee2](https://github.com/smartboxchannel/Plant-Watering-Sensor-Zigbee/blob/main/IMAGES/004.jpg) 
+![e-Flower](https://github.com/smartboxchannel/e-Flower/blob/main/IMAGES/04.jpg) 
 
 ### Components:
 ##### (Soldering time: 10-15 minutes.)
