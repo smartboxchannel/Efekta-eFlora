@@ -17,9 +17,9 @@ More info at http://efektalab.com/epws
 
 ---
 
-![Plant-Watering-Sensor-Zigbee2](https://github.com/smartboxchannel/Plant-Watering-Sensor-Zigbee/blob/main/IMAGES/001.png) 
+![e-Flower](https://github.com/smartboxchannel/e-Flower/blob/main/IMAGES/01.png) 
 
-![Plant-Watering-Sensor-Zigbee2](https://github.com/smartboxchannel/Plant-Watering-Sensor-Zigbee/blob/main/IMAGES/002.jpg) 
+![e-Flower](https://github.com/smartboxchannel/e-Flower/blob/main/IMAGES/02.png) 
 
 ![Plant-Watering-Sensor-Zigbee2](https://github.com/smartboxchannel/Plant-Watering-Sensor-Zigbee/blob/main/IMAGES/003.jpg) 
 
