@@ -25,34 +25,6 @@ More info at http://efektalab.com/epws
 
 ![e-Flower](https://github.com/smartboxchannel/e-Flower/blob/main/IMAGES/04.jpg) 
 
-### Components:
-##### (Soldering time: 10-15 minutes.)
-
-CC2530 E18-MS1-PCB - https://ali.ski/v8RP7i (10pcs)
-
-CC2530 E18-MS1-PCB - https://ali.ski/o_TBGP
-
-Tantalum Capacitor 220uF - https://ali.ski/VApfn
-
-SMD LED 0805 - https://ali.ski/wb6ZP 
-
-1% SMD Resistor Kit Assorted Kit 1R-1M 0603 - https://ali.ski/npItF
-
-SMD Chip Multilayer Ceramic Capacitor 0603 10pF 50V - https://ali.ski/p3yr60
-
-SMD Chip Multilayer Ceramic Capacitor 0603 100nF 50V - https://ali.ski/p3yr60
-
-1N4148WS - https://ali.ski/cOCdto
-
-Cell Holder CR2450 - https://ali.ski/VdotsA
-
-Micro Button Tact Switch SMD 4Pin 3X4X2.5 - https://ali.ski/sGwFu
-
-IRLML6402TRPBF - https://ali.ski/_iNbX
-
-Micro Screws M1.4 5mm - https://ali.ski/gaFdO
-
-
 ---
 
 ### How to flash the device
