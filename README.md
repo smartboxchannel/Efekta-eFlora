@@ -13,7 +13,7 @@ e-Paper display 1.02. Powered by SoC CC2530, the sensor is based on a capacitive
 
 #### Telegram DiyDev - https://t.me/diy_devices
 
-More info at http://efektalab.com/eON_ePWS_Z
+More info at http://efektalab.com/epws
 
 ---
 
