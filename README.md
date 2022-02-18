@@ -21,11 +21,13 @@ More info at http://efektalab.com/epws
 
 ![e-Flower](https://github.com/smartboxchannel/e-Flower/blob/main/IMAGES/02.png) 
 
-##### Old version: 
+##### Old version(V1): 
 
 ![e-Flower](https://github.com/smartboxchannel/e-Flower/blob/main/IMAGES/03.jpg) 
 
 ![e-Flower](https://github.com/smartboxchannel/e-Flower/blob/main/IMAGES/04.jpg) 
+
+##### New version(V2): 
 
 ---
 
