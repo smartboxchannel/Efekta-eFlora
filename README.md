@@ -1,5 +1,9 @@
 # e-Flower (Plant-Watering-Sensor-Zigbee with e-ink 1.02 display)
 
+Телеграм чат DIY Devices - https://t.me/diy_devices
+
+Продажа DIY Устройств - https://t.me/diydevmart
+
 e-Paper display 1.02. Powered by SoC CC2530, the sensor is based on a capacitive measurement method. The sensor is powered by a CR2477 battery.
 
 ## You can make your own pcb here - https://www.pcbway.com/setinvite.aspx?inviteid=550959
@@ -7,12 +11,6 @@ e-Paper display 1.02. Powered by SoC CC2530, the sensor is based on a capacitive
 #### Donate to me: https://paypal.me/efektalab or just buy to support this project
 
 #### Sale: https://www.tindie.com/products/diyberk/plant-watering-sensor-with-e-ink-display-zigbee/
-
-#### Video: 
-
-#### Telegram ZigDev - https://t.me/zigdev
-
-#### Telegram DiyDev - https://t.me/diy_devices
 
 More info at http://efektalab.com/epws
 
