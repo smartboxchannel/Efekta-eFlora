@@ -1,0 +1,205 @@
+{
+  "manufacturer": "EfektaLab",
+  "model": "EFEKTA_eFlora",
+  "manufacturerId": "EfektaLab",
+  "modelId": "EFEKTA_eFlora",
+  "name": "Датчик влажности почвы c e-ink дисплеем",
+  "template": "/_Battery/BatteryPercentageRemaining.json",
+  "init": [
+    {
+      "link": {
+        "endpoint": 1,
+        "cluster": "0400_IlluminanceMeasurement",
+        "attribute": "0000_MeasuredValue"
+      },
+      "bind": true,
+      "report": {
+        "min": 600,
+        "max": 3600,
+        "change": 10
+      }
+    },
+    {
+      "link": {
+        "endpoint": 1,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0000_MeasuredValue"
+      },
+      "bind": true,
+      "report": {
+        "min": 120,
+        "max": 3600,
+        "change": 25
+      }
+    },
+    {
+      "link": {
+        "endpoint": 1,
+        "cluster": "0405_RelativeHumidityMeasurement",
+        "attribute": "0000_MeasuredValue"
+      },
+      "bind": true,
+      "report": {
+        "min": 240,
+        "max": 3600,
+        "change": 50
+      }
+    },
+    {
+      "link": {
+        "endpoint": 1,
+        "cluster": "0001_PowerConfiguration",
+        "attribute": "0021_BatteryPercentageRemaining"
+      },
+      "bind": true,
+      "report": {
+        "min": 3600,
+        "max": 43200,
+        "change": 1
+      }
+    },
+    {
+      "link": {
+        "endpoint": 1,
+        "cluster": "0408_SoilMoisture",
+        "attribute": "0000_MeasuredValue"
+      },
+      "bind": true,
+      "report": {
+        "min": 60,
+        "max": 3600,
+        "change": 10
+      }
+    }
+  ],
+  "services": [
+    {
+      "type": "TemperatureSensor",
+      "characteristics": [
+        {
+          "type": "CurrentTemperature",
+          "link": {
+            "endpoint": 1,
+            "cluster": "0402_TemperatureMeasurement",
+            "attribute": "0000_MeasuredValue"
+          }
+        }
+      ]
+    },
+    {
+      "type": "LightSensor",
+      "characteristics": [
+        {
+          "type": "CurrentAmbientLightLevel",
+          "link": {
+            "endpoint": 1,
+            "cluster": "0400_IlluminanceMeasurement",
+            "attribute": "0000_MeasuredValue"
+          }
+        }
+      ]
+    },
+    {
+      "type": "HumiditySensor",
+      "characteristics": [
+        {
+          "type": "CurrentRelativeHumidity",
+          "link": {
+            "endpoint": 1,
+            "cluster": "0405_RelativeHumidityMeasurement",
+            "attribute": "0000_MeasuredValue"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Влажность почвы",
+      "type": "HumiditySensor",
+      "characteristics": [
+        {
+          "type": "CurrentRelativeHumidity",
+          "link": {
+            "endpoint": 1,
+            "cluster": "0408_SoilMoisture",
+            "attribute": "0000_MeasuredValue"
+          }
+        }
+      ]
+    }
+  ],  
+  "options": [
+	{
+        "link": {
+          "endpoint": 1,
+          "cluster": "0001_PowerConfiguration",
+          "attribute": "0201_ReportDelay"
+        },
+        "name": "Интервал отправки данных, минуты",
+        "type": "Integer",
+        "init": false,
+        "value": 30,
+        "minValue": 10,
+        "maxValue": 3600,
+        "minStep": 1
+    },
+	{
+      "link": {
+        "endpoint": 1,
+        "cluster": "0001_PowerConfiguration",
+        "attribute": "0210_InvertDisplay"
+		},
+      "name": "Инвертирование цвета дисплея",
+      "type": "Boolean",
+      "init": false,
+      "value": false
+	},
+	{
+      "link": {
+        "endpoint": 1,
+        "cluster": "0408_SoilMoisture",
+        "attribute": "0502_LowBorder"
+		},
+      "name": "Нижняя граница влажности почвы для 0%",
+      "type": "Integer",
+      "init": false,
+      "value": 0,
+      "minValue": 0,
+      "maxValue": 99
+	},
+	{
+      "link": {
+        "endpoint": 1,
+        "cluster": "0408_SoilMoisture",
+        "attribute": "0503_HiBorder"
+		},
+      "name": "Верхняя граница влажности почвы для 100%",
+      "type": "Integer",
+      "init": false,
+      "value": 100,
+      "minValue": 1,
+      "maxValue": 100
+	},
+	{
+      "link": {
+        "endpoint": 1,
+        "cluster": "0408_SoilMoisture",
+        "attribute": "0504_MeasurementMethod"
+		},
+      "name": "Выбрать метод измерения влажности почвы",
+      "type": "Boolean",
+      "init": false,
+      "value": false
+	},
+	{
+      "link": {
+        "endpoint": 1,
+        "cluster": "0408_SoilMoisture",
+        "attribute": "0505_TemperatureCompensation"
+		},
+      "name": "Температурная компенсация измеренной влажности почвы",
+      "type": "Boolean",
+      "init": false,
+      "value": true
+	}
+  ]
+}
