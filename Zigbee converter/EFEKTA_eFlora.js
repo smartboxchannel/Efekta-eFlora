@@ -10,8 +10,8 @@ async function onEventSetLocalTime(type, data, device) {
  
     if (data.type === 'attributeReport' && data.cluster === 'genTime') {
 	    try {	
-		    const endpoint = device.getEndpoint(1);
-		    const time = Math.round((((new Date()).getTime() - constants.OneJanuary2000) / 1000) + (((new Date()).getTimezoneOffset() * -1) * 60));
+            const endpoint = device.getEndpoint(1);
+            const time = Math.round((((new Date()).getTime() - constants.OneJanuary2000) / 1000) + (((new Date()).getTimezoneOffset() * -1) * 60));
             await endpoint.write('genTime', {time: time});
         }catch (error) {
             // endpoint.write can throw an error which needs to
@@ -25,10 +25,10 @@ const definition = {
         zigbeeModel: ['EFEKTA_eFlora'],
         model: 'EFEKTA_eFlora',
         vendor: 'Custom devices (DiY)',
-        description: '[Plant Wattering Sensor with e-ink display 1.02](https://efektalab.com/eFlora',
+        description: '[Plant Wattering Sensor with e-ink display 1.02](https://efektalab.com/eFlora)',
         fromZigbee: [fz.temperature, fz.illuminance, fz.humidity, fz.soil_moisture, fz.battery],
         toZigbee: [tz.factory_reset],
-		onEvent: onEventSetLocalTime,
+        onEvent: onEventSetLocalTime,
         configure: async (device, coordinatorEndpoint, logger) => {
             const firstEndpoint = device.getEndpoint(1);
             await reporting.bind(firstEndpoint, coordinatorEndpoint, [
