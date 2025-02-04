@@ -25,7 +25,7 @@ const definition = {
         zigbeeModel: ['EFEKTA_eFlora'],
         model: 'EFEKTA_eFlora',
         vendor: 'Custom devices (DiY)',
-        description: '[Plant Wattering Sensor with e-ink display 1.02](https://efektalab.com/eFlora',
+        description: '[Plant Wattering Sensor with e-ink display 1.02](https://efektalab.com/eFlora',)',
         fromZigbee: [fz.temperature, fz.humidity, fz.soil_moisture, fz.battery],
         toZigbee: [tz.factory_reset],
         onEvent: onEventSetLocalTime,
