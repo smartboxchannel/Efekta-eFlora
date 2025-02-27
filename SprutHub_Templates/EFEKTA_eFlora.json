@@ -7,7 +7,41 @@
   "template": "/_Battery/BatteryPercentageRemaining.json",
   "init": [
     {
-      "link": {
+      "zcl": [
+	    {
+          "endpoint": 1,
+          "cluster": "0001_PowerConfiguration",
+          "attribute": "0201_Custom",
+          "zclDataType": "UNSIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 1,
+          "cluster": "0001_PowerConfiguration",
+          "attribute": "0210_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 1,
+          "cluster": "0408_SoilMoisture",
+          "attribute": "0502_Custom",
+          "zclDataType": "UNSIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 1,
+          "cluster": "0408_SoilMoisture",
+          "attribute": "0503_Custom",
+          "zclDataType": "UNSIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 1,
+          "cluster": "0408_SoilMoisture",
+          "attribute": "0505_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+      ]
+    },
+    {
+        "link": {
         "endpoint": 1,
         "cluster": "0400_IlluminanceMeasurement",
         "attribute": "0000_MeasuredValue"
@@ -57,6 +91,28 @@
         "max": 43200,
         "change": 1
       }
+    },
+	{
+        "link": {
+          "endpoint": 1,
+          "cluster": "0001_PowerConfiguration",
+		  "attribute": "003E_BatteryAlarmState"
+        },
+        "bind": true,
+        "report": {
+          "min": 1800,
+          "max": 43200,
+          "change": 1
+        }
+    },
+	{
+      "link": {
+        "endpoint": 1,
+        "cluster": "000A_Time",
+        "attribute": "0007_LocalTime"
+      },
+      "bind": false,
+	  "report": false
     },
     {
       "link": {
@@ -148,11 +204,21 @@
         "cluster": "0001_PowerConfiguration",
         "attribute": "0210_InvertDisplay"
 		},
-      "name": "Инвертирование цвета дисплея",
-      "type": "Boolean",
-      "init": false,
-      "value": false
-	},
+      "name": "Инвертирование цвета e-paper дисплея",
+        "type": "Boolean",
+        "init": false,
+        "value": 1,
+		"values": [
+        {
+          "value": 0,
+          "name": "Черное на белом"
+        },
+        {
+          "value": 1,
+          "name": "Белое на черном"
+        }
+      ]
+    },
 	{
       "link": {
         "endpoint": 1,
@@ -183,23 +249,12 @@
       "link": {
         "endpoint": 1,
         "cluster": "0408_SoilMoisture",
-        "attribute": "0504_MeasurementMethod"
-		},
-      "name": "Выбрать метод измерения влажности почвы",
-      "type": "Boolean",
-      "init": false,
-      "value": false
-	},
-	{
-      "link": {
-        "endpoint": 1,
-        "cluster": "0408_SoilMoisture",
         "attribute": "0505_TemperatureCompensation"
 		},
       "name": "Температурная компенсация измеренной влажности почвы",
       "type": "Boolean",
       "init": false,
-      "value": true
+      "value": 0
 	}
   ]
 }
