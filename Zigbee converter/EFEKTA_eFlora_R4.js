@@ -107,7 +107,6 @@ const fzLocal = {
             return result;
         },
     },
-	const fzLocal = {
 	illuminance: {
         cluster: 'msIlluminanceMeasurement',
         type: ['attributeReport', 'readResponse'],
@@ -122,7 +121,6 @@ const fzLocal = {
             return result;
         },
     },
-};
 };
 
 const definition = {
