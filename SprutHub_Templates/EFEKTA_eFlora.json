@@ -12,7 +12,7 @@
           "endpoint": 1,
           "cluster": "0001_PowerConfiguration",
           "attribute": "0201_Custom",
-          "zclDataType": "UNSIGNED_16_BIT_INTEGER"
+          "zclDataType": "SIGNED_16_BIT_INTEGER"
         },
 		{
           "endpoint": 1,
@@ -37,7 +37,7 @@
           "cluster": "0408_SoilMoisture",
           "attribute": "0505_Custom",
           "zclDataType": "BOOLEAN"
-        },
+        }
       ]
     },
     {
@@ -207,14 +207,14 @@
       "name": "Инвертирование цвета e-paper дисплея",
         "type": "Boolean",
         "init": false,
-        "value": 1,
+        "value": true,
 		"values": [
         {
-          "value": 0,
+          "value": false,
           "name": "Черное на белом"
         },
         {
-          "value": 1,
+          "value": true,
           "name": "Белое на черном"
         }
       ]
@@ -254,7 +254,7 @@
       "name": "Температурная компенсация измеренной влажности почвы",
       "type": "Boolean",
       "init": false,
-      "value": 0
+      "value": false
 	}
   ]
 }
